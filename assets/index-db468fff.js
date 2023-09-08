@@ -65,7 +65,7 @@ Error generating stack: `+o.message+`
     font-weight: 700;
     background-color:  ${e=>e.$isSelected?"black":"white"};
     color: ${e=>e.$isSelected?"white":"black"};
-`,Cm=({roleDice:e,currentDice:t})=>R.jsxs(_m,{children:[R.jsx("div",{className:"dice",onClick:e,children:R.jsx("img",{src:`/images/dice/dice_${t}.png`,alt:"dice 1"})}),R.jsx("p",{children:"Click on Dice to roll"})]}),_m=be.div`
+`,Cm=({roleDice:e,currentDice:t})=>R.jsxs(_m,{children:[R.jsx("div",{className:"dice",onClick:e,children:R.jsx("img",{src:`images/dice/dice_${t}.png`,alt:"dice 1"})}),R.jsx("p",{children:"Click on Dice to roll"})]}),_m=be.div`
 display: flex;
 flex-direction: column;
 margin-top: 48px;
@@ -148,18 +148,17 @@ padding-top: 70px;
     justify-content: center;
     gap: 10px;
 }
-`,Om=({toggle:e})=>R.jsxs(Im,{children:[R.jsx("div",{children:R.jsx("img",{src:"./images/dices.png"})}),R.jsxs("div",{className:"content",children:[R.jsx("h1",{children:"Dice Game"}),R.jsx(Hu,{onClick:e,children:"Play Now"})]})]}),Im=be.div`
-max-width: 1180px;
-display: flex;
-margin: 0 auto;
-height: 100vh;
-align-items: center;
+`,Om=({toggle:e})=>R.jsxs(Im,{children:[R.jsx("div",{children:R.jsx("img",{src:"images/dices.png"})}),R.jsxs("div",{className:"content",children:[R.jsx("h1",{children:"Dice Game"}),R.jsx(Hu,{onClick:e,children:"Play Now"})]})]}),Im=be.div`
+  max-width: 1180px;
+  display: flex;
+  margin: 0 auto;
+  height: 100vh;
+  align-items: center;
 
-.content {
-  h1{
-    font-size: 96px;
-    white-space: nowrap;
-    ;
+  .content {
+    h1 {
+      font-size: 96px;
+      white-space: nowrap;
+    }
   }
-}
 `;function jm(){const[e,t]=He.useState(!1),n=()=>{t(r=>!r)};return R.jsx(R.Fragment,{children:e?R.jsx(Lm,{}):R.jsx(Om,{toggle:n})})}Vo.createRoot(document.getElementById("root")).render(R.jsx(En.StrictMode,{children:R.jsx(jm,{})}));
